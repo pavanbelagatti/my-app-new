@@ -8,10 +8,10 @@ steps:
   commands:
   - npm install
   - npm test
+  
 steps:
 - name: docker  
   image: plugins/docker
-  
   settings:
     # registry: docker.io
     repo: pavansa/my-app-new
