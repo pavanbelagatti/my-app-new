@@ -3,11 +3,15 @@ type: docker
 name: default
 
 steps:
-- name: docker
+- name: test
   image: node
   commands:
   - npm install
   - npm test
+steps:
+- name: docker  
+  image: plugins/docker
+  
   settings:
     # registry: docker.io
     repo: pavansa/my-app-new
